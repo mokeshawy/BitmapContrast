@@ -1,11 +1,11 @@
-package com.example.cutbitmapkotlin
+package com.example.bitmapcontrast
 
 import android.graphics.*
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
-import com.example.cutbitmapkotlin.databinding.ActivityMain2Binding
+import com.example.bitmapcontrast.databinding.ActivityMain2Binding
 import kotlin.math.pow
 
 

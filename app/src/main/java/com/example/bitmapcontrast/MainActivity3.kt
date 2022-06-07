@@ -1,11 +1,11 @@
-package com.example.cutbitmapkotlin
+package com.example.bitmapcontrast
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.cutbitmapkotlin.databinding.ActivityMain3Binding
+import com.example.bitmapcontrast.databinding.ActivityMain3Binding
 
 class MainActivity3 : AppCompatActivity() {
 
