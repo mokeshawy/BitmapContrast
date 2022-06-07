@@ -38,21 +38,16 @@ class MainActivity2 : AppCompatActivity() {
 
 
     private fun setBitmapContrast(bitmapSrc: Bitmap, contrastValue: Int) {
-        // color information
         var alpha: Int
         var read: Int
         var green: Int
         var blue: Int
         var pixel: Int
-        // get contrast value
         val contrast = ((100.0 + contrastValue) / 100.0).pow(2.0)
-        // scan through all pixels
         for (x in 0 until bitmapSrc.width) {
             for (y in 0 until bitmapSrc.height) {
-                // get pixel color
                 pixel = bitmapSrc.getPixel(x, y)
                 alpha = Color.alpha(pixel)
-                // apply filter contrast for every channel R, G, B
                 read = Color.red(pixel)
                 read = (((read / 255.0 - 0.5) * contrast + 0.5) * 255.0).toInt()
                 if (read < 0) {
@@ -74,7 +69,6 @@ class MainActivity2 : AppCompatActivity() {
                 } else if (blue > 255) {
                     blue = 255
                 }
-                // set new pixel color to output bitmap
                 bitmapSrc.setPixel(x, y, Color.argb(alpha, read, green, blue))
             }
         }
